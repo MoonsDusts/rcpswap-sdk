@@ -89,7 +89,8 @@ export interface BestTradeOptions {
  */
 function wrappedAmount(currencyAmount: CurrencyAmount, chainId: ChainId): TokenAmount {
   if (currencyAmount instanceof TokenAmount) return currencyAmount
-  if (currencyAmount.currency && DEFAULT_CURRENCIES.includes(currencyAmount.currency)) return new TokenAmount(WETH[chainId], currencyAmount.raw)
+  if (currencyAmount.currency && DEFAULT_CURRENCIES.includes(currencyAmount.currency))
+    return new TokenAmount(WETH[chainId], currencyAmount.raw)
   invariant(false, 'CURRENCY')
 }
 

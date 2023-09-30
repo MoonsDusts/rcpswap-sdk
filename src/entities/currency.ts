@@ -19,11 +19,6 @@ export class Currency {
   public static readonly ETHER: Currency = new Currency(18, 'ETH', 'Ether')
 
   /**
-   * The NOVA instance of the base class `Currency`.
-   */
-  public static readonly NOVA: Currency = new Currency(18, 'ETH', 'Ether')
-
-  /**
    * The BINANCE_COIN instance of the base class `Currency`.
    */
   public static readonly BINANCE_COIN: Currency = new Currency(18, 'BNB', 'Binance Coin')
@@ -44,8 +39,7 @@ export class Currency {
 }
 
 const ETHER = Currency.ETHER
-const NOVA = Currency.NOVA
 const BINANCE_COIN = Currency.BINANCE_COIN
-const DEFAULT_CURRENCIES = [ETHER, NOVA, BINANCE_COIN]
+const DEFAULT_CURRENCIES = [ETHER, BINANCE_COIN]
 
-export { ETHER, NOVA, BINANCE_COIN, DEFAULT_CURRENCIES }
+export { ETHER, BINANCE_COIN, DEFAULT_CURRENCIES }

@@ -27,7 +27,9 @@ export class Route {
     invariant(
       typeof output === 'undefined' ||
         (output instanceof Token && pairs[pairs.length - 1].involvesToken(output)) ||
-        (output && DEFAULT_CURRENCIES.includes(output) && pairs[pairs.length - 1].involvesToken(WETH[pairs[0].chainId])),
+        (output &&
+          DEFAULT_CURRENCIES.includes(output) &&
+          pairs[pairs.length - 1].involvesToken(WETH[pairs[0].chainId])),
       'OUTPUT'
     )
 
