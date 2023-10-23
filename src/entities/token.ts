@@ -94,6 +94,13 @@ export const WETH = {
     'WBNB',
     'Wrapped BNB'
   ),
+  [ChainId.POLYGON]: new Token(
+    ChainId.POLYGON,
+    "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+    18,
+    "WMATIC",
+    "Wrapped Matic"
+  ),
   [ChainId.ARBITRUM_NOVA]: new Token(
     ChainId.ARBITRUM_NOVA,
     '0x722e8bdd2ce80a4422e880164f2079488e115365',

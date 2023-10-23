@@ -24,6 +24,11 @@ export class Currency {
   public static readonly BINANCE_COIN: Currency = new Currency(18, 'BNB', 'Binance Coin')
 
   /**
+   * The BINANCE_COIN instance of the base class `Currency`.
+   */
+  public static readonly MATIC_COIN: Currency = new Currency(18, 'Matic', 'Matic Token')
+
+  /**
    * Constructs an instance of the base class `Currency`. The only instance of the base class `Currency` is `Currency.ETHER`.
    * @param decimals decimals of the currency
    * @param symbol symbol of the currency
@@ -40,6 +45,7 @@ export class Currency {
 
 const ETHER = Currency.ETHER
 const BINANCE_COIN = Currency.BINANCE_COIN
-const DEFAULT_CURRENCIES = [ETHER, BINANCE_COIN]
+const MATIC_TOKEN = Currency.MATIC_COIN
+const DEFAULT_CURRENCIES = [ETHER, BINANCE_COIN, MATIC_TOKEN]
 
-export { ETHER, BINANCE_COIN, DEFAULT_CURRENCIES }
+export { ETHER, BINANCE_COIN, MATIC_TOKEN, DEFAULT_CURRENCIES }
