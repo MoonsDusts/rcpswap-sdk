@@ -26,7 +26,7 @@ export class Currency {
   /**
    * The BINANCE_COIN instance of the base class `Currency`.
    */
-  public static readonly MATIC_COIN: Currency = new Currency(18, 'Matic', 'Matic Token')
+  public static readonly MATIC_COIN: Currency = new Currency(18, 'MATIC', 'Matic')
 
   /**
    * Constructs an instance of the base class `Currency`. The only instance of the base class `Currency` is `Currency.ETHER`.
